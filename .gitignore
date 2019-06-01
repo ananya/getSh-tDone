@@ -135,5 +135,5 @@ dmypy.json
 
 
 **/views
-app.py
+# app.py
 content.txt
