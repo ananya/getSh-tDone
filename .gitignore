@@ -134,6 +134,6 @@ dmypy.json
 # End of https://www.gitignore.io/api/flask
 
 
-**/views
+# **/views
 # app.py
 content.txt
