@@ -45,6 +45,5 @@ def do_url_summariser():
     except:
         pass
 
-@
 if __name__ == "main" : 
     app.run(debug=True)
