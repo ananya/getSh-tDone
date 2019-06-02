@@ -26,4 +26,3 @@ def detect_document(path):
                     s+= ' '
         print('{}'.format(s))
 
-detect_document('IMG_20190601_195041.JPG')

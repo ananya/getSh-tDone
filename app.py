@@ -39,11 +39,12 @@ def do_text_summariser():
 def do_url_summariser():
     try:
         print("neha")
-        file_name = textsummariser.convert_url_to_text("https://medium.com/baseds/many-nodes-one-distributed-system-9921f85205c4")
+        file_name = textsummariser.convert_url_to_text("https://medium.com/coinmonks/a-quick-introduction-to-distributed-systems-33868c85858e")
         print ( file_name )
         return( json.dumps(textsummariser.generate_summary(file_name,8) ))
     except:
         pass
-        
+
+@
 if __name__ == "main" : 
     app.run(debug=True)

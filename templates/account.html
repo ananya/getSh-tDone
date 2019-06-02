@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with a Design System for Bootstrap 4.">
+    <meta name="author" content="Creative Tim">
+    <title>last_min</title>
+    <!-- Favicon -->
+    <link href="../static/assets/img/brand/favicon.png" rel="icon" type="image/png">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Da&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <link href="../static/assets/vendor/nucleo/css/nucleo.css" rel="stylesheet">
+    <link href="../static/assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Argon CSS -->
+    <link type="text/css" href="../static/assets/css/argon.css?v=1.0.1" rel="stylesheet">
+    <!-- Docs CSS -->
+    <link type="text/css" href="../static/assets/css/docs.min.css" rel="stylesheet">
+    <style>
+      html {
+          scroll-behaviour: smooth;
+      }
+    </style>
+</head>
+
+<body style="background-color:white">
+  <header class="header-global" style="background-color: #39ac73">
+    <nav id="navbar-main" class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light headroom">
+      <div class="container">
+        <a class="navbar-brand mr-lg-5">
+          <img src="../static/assets/img/brand/white.png">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="navbar_global">
+          <div class="navbar-collapse-header">
+            <div class="row">
+              <div class="col-6 collapse-brand">
+                  <img src="../static/assets/img/brand/blue.png">
+                </a>
+              </div>
+              <div class="col-6 collapse-close">
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
+                  <span></span>
+                  <span></span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link" data-toggle="dropdown" href="#" role="button">
+                <i class="ni ni-ui-04 d-lg-none"></i>
+                <span class="nav-link-inner--text" style="font-size:20px">Subjects</span>
+              </a>
+              <div class="dropdown-menu dropdown-menu-xl">
+                <div class="dropdown-menu-inner">
+                  <a href="https://demos.creative-tim.com/argon-design-system/docs/getting-started/overview.html" class="media d-flex align-items-center">
+                    <div class="icon icon-shape bg-gradient-primary rounded-circle text-white">
+                      <i class="ni ni-spaceship"></i>
+                    </div>
+                    <div class="media-body ml-3">
+                      <h6 class="heading text-primary mb-md-1">Data Structure</h6>
+                      <p class="description d-none d-md-inline-block mb-0">Learn how to use Argon compiling Scss, change brand colors and more.</p>
+                    </div>
+                  </a>
+                  <a href="https://demos.creative-tim.com/argon-design-system/docs/foundation/colors.html" class="media d-flex align-items-center">
+                    <div class="icon icon-shape bg-gradient-success rounded-circle text-white">
+                      <i class="ni ni-palette"></i>
+                    </div>
+                    <div class="media-body ml-3">
+                      <h6 class="heading text-primary mb-md-1">Operating System</h6>
+                      <p class="description d-none d-md-inline-block mb-0">Learn more about colors, typography, icons and the grid system we used for Argon.</p>
+                    </div>
+                  </a>
+                  <a href="https://demos.creative-tim.com/argon-design-system/docs/components/alerts.html" class="media d-flex align-items-center">
+                    <div class="icon icon-shape bg-gradient-warning rounded-circle text-white">
+                      <i class="ni ni-ui-04"></i>
+                    </div>
+                    <div class="media-body ml-3">
+                      <h5 class="heading text-warning mb-md-1">Java</h5>
+                      <p class="description d-none d-md-inline-block mb-0">Browse our 50 beautiful handcrafted components offered in the Free version.</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </li>
+            <!-- <li class="nav-item dropdown">
+              <a href="#" class="nav-link" data-toggle="dropdown" href="#" role="button">
+                <i class="ni ni-collection d-lg-none"></i>
+                <span class="nav-link-inner--text">Examples</span>
+              </a>
+              <div class="dropdown-menu">
+                <a href="../examples/landing.html" class="dropdown-item">Landing</a>
+                <a href="../examples/profile.html" class="dropdown-item">Profile</a>
+                <a href="../examples/login.html" class="dropdown-item">Login</a>
+                <a href="../examples/register.html" class="dropdown-item">Register</a>
+              </div>
+            </li> -->
+          </ul>
+          <ul class="navbar-nav align-items-lg-center ml-lg-auto">
+            <li class="nav-item">
+              <a class="nav-link nav-link-icon" href="https://www.facebook.com/creativetim" target="_blank" data-toggle="tooltip" title="Like us on Facebook">
+                <i class="fa fa-facebook-square"></i>
+                <span class="nav-link-inner--text d-lg-none">Facebook</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-icon" href="https://www.instagram.com/creativetimofficial" target="_blank" data-toggle="tooltip" title="Follow us on Instagram">
+                <i class="fa fa-instagram"></i>
+                <span class="nav-link-inner--text d-lg-none">Instagram</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-icon" href="https://twitter.com/creativetim" target="_blank" data-toggle="tooltip" title="Follow us on Twitter">
+                <i class="fa fa-twitter-square"></i>
+                <span class="nav-link-inner--text d-lg-none">Twitter</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-icon" href="https://github.com/creativetimofficial/argon-design-system" target="_blank" data-toggle="tooltip" title="Star us on Github">
+                <i class="fa fa-github"></i>
+                <span class="nav-link-inner--text d-lg-none">Github</span>
+              </a>
+            </li>
+            <li class="nav-item d-none d-lg-block ml-lg-4">
+              <a href="https://www.creative-tim.com/product/argon-design-system" target="_blank" class="btn btn-neutral btn-icon">
+                <span class="btn-inner--icon">
+                  <i class="fa fa-cloud-download mr-2"></i>
+                </span>
+                <span class="nav-link-inner--text">Home</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+        <div class="position-relative" style="background-color: white">
+  
+                <section class="section section-lg section-shaped pb-250">
+                  <div class="shape shape-style-1 shape-default">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <div style="margin:100px"></div>
+                  <div class="container py-lg-md d-flex">
+                    <div class="col px-0">
+                      <div class="row">
+                        <div class="col-lg-6" style="align-content: center">
+                          <div class="btn-wrapper">
+                            <a href="#videos" class="btn btn-info btn-icon mb-3 mb-sm-0" style="width:150px ;height:55px;background-color: #008080">
+                              <span class="btn-inner--text" style="font-size: 20px">Videos</span>
+                            </a>
+                            <a href="#blogs" class="btn btn-info btn-icon mb-3 mb-sm-0" style="width:150px ;height:55px;background-color: #008080">
+                                    <span class="btn-inner--text" style="font-size: 20px">Blogs</span>
+                                  </a>
+                            <a href="#notes" class="btn btn-info btn-icon mb-3 mb-sm-0" style="width:150px ;height:55px;background-color: #008080">
+                                    <span class="btn-inner--text" style="font-size: 20px">Notes</span>
+                                  </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div style="margin:100px"></div>
+                  <!-- <div class="separator separator-bottom separator-skew">
+                    <svg x="0" y="0" viewBox="0 0 2560 100" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                      <polygon class="fill-white" points="2560 0 2560 100 0 100"></polygon>
+                    </svg>
+                  </div> -->
+                </section>
+                <!-- 1st Hero Variation -->
+                <div style="margin-top:-200px"></div>
+              </div>
+              <h3 id="videos" style="text-align: center;position:absolute; top:44%; right:45%;color: #39ac73; font-family: 'Baloo Da', cursive; font-size:60px">Videos</h3>
+              <section class="section section-lg pt-lg-0 mt--200">
+                    <div class="container">
+                      <div class="row justify-content-center">
+                        <div class="col-lg-12">
+                          <div class="row row-grid">
+                            <div class="col-lg-4">
+                              <div class="card card-lift--hover shadow border-0">
+                                <div class="card-body py-5">
+                                    <div>
+                                            <iframe style="margin-left:-17px; margin-top:-20px" src="videos/omg.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                  <h6 class="text-primary text-uppercase">Download Argon</h6>
+                                  <a href="#" class="btn btn-primary mt-4">Watch Now</a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-lg-4">
+                              <div class="card card-lift--hover shadow border-0">
+                                <div class="card-body py-5">
+                                  <div>
+                                        <iframe style="margin-left:-17px; margin-top:-20px" src="videos/omg.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                  <h6 class="text-success text-uppercase">Build Something</h6>
+                                  <a href="#" class="btn btn-success mt-4">Watch Now</a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-lg-4">
+                              <div class="card card-lift--hover shadow border-0">
+                                <div class="card-body py-5">
+                                        <div>
+                                                <iframe style="margin-left:-17px; margin-top:-20px" src="videos/omg.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        </div>
+                                  <h6 class="text-warning text-uppercase">Prepare Launch</h6>
+                                  <a href="#" class="btn btn-warning mt-4">Watch Now</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                  <div style="margin:350px"></div>
+                  <h3 id="blogs" style="text-align: center;position:absolute; top:102%; right:46%;color: #39ac73; font-family: 'Baloo Da', cursive; font-size:60px">Blogs</h3>
+                    <section class="section section-lg pt-lg-0 mt--200">
+                            <div class="container">
+                              <div class="row justify-content-center">
+                                <div class="col-lg-12">
+                                  <div class="row row-grid">
+                                    <div class="col-lg-6">
+                                      <div class="card card-lift--hover shadow border-0">
+                                        <div class="card-body py-5">
+                                          <div class="icon icon-shape icon-shape-primary rounded-circle mb-4">
+                                            <i class="ni ni-check-bold"></i>
+                                          </div>
+                                          <h6 class="text-primary text-uppercase">Download Argon</h6>
+                                          <p class="description mt-3">Argon is a great free UI package based on Bootstrap 4 that includes the most important components and features.</p>
+                                          <div>
+                                            <span class="badge badge-pill badge-primary">design</span>
+                                            <span class="badge badge-pill badge-primary">system</span>
+                                            <span class="badge badge-pill badge-primary">creative</span>
+                                          </div>
+                                          <a href="#" class="btn btn-primary mt-4">Learn more</a>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="col-lg-6" style="width:100px">
+                                      <div class="card card-lift--hover shadow border-0">
+                                        <div class="card-body py-5">
+                                          <div class="icon icon-shape icon-shape-success rounded-circle mb-4">
+                                            <i class="ni ni-istanbul"></i>
+                                          </div>
+                                          <h6 class="text-success text-uppercase">Build Something</h6>
+                                          <p class="description mt-3">Argon is a great free UI package based on Bootstrap 4 that includes the most important components and features.</p>
+                                          <div>
+                                            <span class="badge badge-pill badge-success">business</span>
+                                            <span class="badge badge-pill badge-success">vision</span>
+                                            <span class="badge badge-pill badge-success">success</span>
+                                          </div>
+                                          <a href="#" class="btn btn-success mt-4">Learn more</a>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </section>
+                          <div style="margin:350px"></div>
+                          <h3 id="notes" style="text-align: center;position:absolute; top:165%; right:46%;color: #39ac73 ;font-family: 'Baloo Da', cursive; font-size:60px">Notes</h3>
+                          <section class="section section-lg pt-lg-0 mt--200">
+                                  <div class="container">
+                                    <div class="row justify-content-center">
+                                      <div class="col-lg-12">
+                                        <div class="row row-grid">
+                                          <div class="col-lg-4">
+                                            <div class="card card-lift--hover shadow border-0">
+                                              <div class="card-body py-5">
+                                                <div class="icon icon-shape icon-shape-primary rounded-circle mb-4">
+                                                  <i class="ni ni-check-bold"></i>
+                                                </div>
+                                                <h6 class="text-primary text-uppercase">https://medium.com/baseds/many-nodes-one-distributed-system-9921f85205c4</h6>
+                                                <p class="description mt-3">We can refer to the individual entities in a distributed system as the nodes of the system . In theory, we could define the opposite of a distributed system in different ways, because the definition of a distributed system somewhat depends on what the components of the system really are . In other words, a node can run its own operations without needing to communicate with other nodes that exist within the distributed system . A single system that does not communicate with others and functions on its own is not a distributed system . Even though the nodes in a distributed system correspond so similarly to the nodes in a graph, there are some aspects to the nodes in a distributed system that make things a little tricky . There are some assumptions we make when dealing with a single system that prove to be incorrect when it comes to a distributed system . If we consider the definition of this word and how a single system works, then it becomes pretty evident that a single system on its own is not a distributed system . Because the nodes in a distributed system are by definition autonomous, they are capable of running their own operations</p>
+                                                <div>
+                                                  <span class="badge badge-pill badge-primary">design</span>
+                                                  <span class="badge badge-pill badge-primary">system</span>
+                                                  <span class="badge badge-pill badge-primary">creative</span>
+                                                </div>
+                                                <a href="#" class="btn btn-primary mt-4">Learn more</a>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="col-lg-4">
+                                            <div class="card card-lift--hover shadow border-0">
+                                              <div class="card-body py-5">
+                                                <div class="icon icon-shape icon-shape-success rounded-circle mb-4">
+                                                  <i class="ni ni-istanbul"></i>
+                                                </div>
+                                                <h6 class="text-success text-uppercase">https://medium.com/coinmonks/a-quick-introduction-to-distributed-systems-33868c85858e</h6>
+                                                <p class="description mt-3">Distributed Systems Ok, but then how do the systems communicate? Example How can computers be organized? We can have a Client Server or Peer to Peer architecture. Client Server Here we have a server which provides service to multiple clients. Client Server model is good for service oriented architecture. Peer to Peer This functions more as a distributed system where workload is distributed among the computers. So I/O module functions as a server to the program. But when we want a set of computers to divide the load among themselves then Peer to Peer model is better. So here our server becomes a single point of failure. One problem here is that if server goes down then the requests won 2019t be served"</p>
+                                                <div>
+                                                  <span class="badge badge-pill badge-success">business</span>
+                                                  <span class="badge badge-pill badge-success">vision</span>
+                                                  <span class="badge badge-pill badge-success">success</span>
+                                                </div>
+                                                <a href="#" class="btn btn-success mt-4">Learn more</a>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="col-lg-4">
+                                            <div class="card card-lift--hover shadow border-0">
+                                              <div class="card-body py-5">
+                                                <div class="icon icon-shape icon-shape-warning rounded-circle mb-4">
+                                                  <i class="ni ni-planet"></i>
+                                                </div>
+                                                <h6 class="text-warning text-uppercase"><a href="//www.freecodecamp.org/news/a-thorough-introduction-to-distributed-systems-3b91562c9b3c/h">
+                                                  https://www.freecodecamp.org/news/a-thorough-introduction-to-distributed-systems-3b91562c9b3c/</a></h6>
+                                                <p class="description mt-3">Distributed file systems can be thought of as distributed data stores.Hadoop Distributed File System (HDFS) is the distributed file system used for distributed computing via the Hadoop framework.Distributed Data Stores are most widely used and recognized as Distributed Databases.A distributed ledger can be thought of as an immutable, append-only database that is replicated, synchronized and shared across all nodes in the distributed network.This means that most systems we will go over today can be thought of as distributed centralized systems 2014 and that is what they2019re made to be.This latest and greatest innovation in the distributed space enabled the creation of the first ever truly distributed payment protocol 2014 Bitcoin.An early innovator in this space was Google, which by necessity of their large amounts of data had to invent a new paradigm for distributed computation 2014 MapReduce.Those systems provide BASE properties (as opposed to traditional databases2019 ACID) Examples of such available distributed databases 2014 Cassandra, Riak, Voldemort Of course, there are other data stores which prefer stronger consistency 2014 HBase, Couchbase, Redis, Zookeeper The CAP theorem is worthy of multiple articles on its own 2014 some regarding how you can tweak a system2019s CAP properties depending on how the client behaves and others on how it is not understood properly</p>
+                                                <div>
+                                                  <span class="badge badge-pill badge-warning">marketing</span>
+                                                  <span class="badge badge-pill badge-warning">product</span>
+                                                  <span class="badge badge-pill badge-warning">launch</span>
+                                                </div>
+                                                <a href="#" class="btn btn-warning mt-4">Learn more</a>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </section>
+
+  <script src="../assets/vendor/jquery/jquery.min.js"></script>
+  <script src="../assets/vendor/popper/popper.min.js"></script>
+  <script src="../assets/vendor/bootstrap/bootstrap.min.js"></script>
+  <script src="../assets/vendor/headroom/headroom.min.js"></script>
+  <!-- Argon JS -->
+  <script src="../assets/js/argon.js?v=1.0.1"></script>
+</body>
+
+</html>
