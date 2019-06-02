@@ -106,6 +106,7 @@ def generate_summary(file_name, top_n=5):
         for i in range(top_n):
             summarize_text.append(" ".join(ranked_sentence[i][1]))
 
+        print (summarize_text)
         # Step 5 - Offcourse, output the summarize texr
         return summarize_text
     except:
@@ -121,7 +122,7 @@ def convert_url_to_text(url):
     except:
         return " earring "
 
-
+generate_summary("notes.txt",5)
 
 # sentences =  read_article(file_name)
 # nltk.download("stopwords")
