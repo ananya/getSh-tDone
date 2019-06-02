@@ -1,0 +1,40 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <style>
+     
+.main {
+  margin: 100px auto;
+  text-align: center;
+}
+
+button {
+  padding: 20px;
+  background: transparent;
+  text-shadow: 1px 1px 1px #202020;
+  font-size: 18pt;
+  border: 1px solid lightblue;
+  color: lightblue;
+}
+
+  </style>
+</head>
+
+<body>
+  <div class="main">
+    <button id="clickme">Click me: 0</button>
+  </div>
+  <script>
+      var button = document.getElementById("clickme"),
+  count = 0;
+button.onclick = function() {
+  count += 1;
+  button.innerHTML = "Click me: " + count;
+};
+
+  </script>
+</body>
+
+</html>

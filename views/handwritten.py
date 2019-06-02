@@ -13,7 +13,7 @@ def detect_document(path):
 
     response = client.document_text_detection(image=image)
     s=''
-
+    file1 = open("notes.txt","w")
     for page in response.full_text_annotation.pages:
         for block in page.blocks:
             for paragraph in block.paragraphs:
@@ -24,5 +24,4 @@ def detect_document(path):
                     for symbol in word.symbols:
                         s += symbol.text
                     s+= ' '
-        print('{}'.format(s))
-
+        file1.write(s)
