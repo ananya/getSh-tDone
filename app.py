@@ -1,6 +1,6 @@
 from flask import Flask, request , render_template
-from views import videoedit
-from views import textsummariser
+# from views import videoedit
+# from views import textsummariser
 import json
 
 app = Flask(__name__)
