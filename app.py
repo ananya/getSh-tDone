@@ -1,24 +1,32 @@
 from flask import Flask, request , render_template
-from views import videoedit
-from views import textsummariser
+# from views import videoedit
+# from views import textsummariser
 import json
 
 app = Flask(__name__)
 
 #routes
 @app.route('/',methods=['GET','POST'])
-def do_landing():
+def index():
     try:
-        return render_template('landing.html')
-    except Exception as e:
-        return e
+        render_template('landing.html')
+    except expression as identifier:
+        pass 
+
+@app.route('/user',methods=['GET','POST'])
+def main():
+    try:
+        render_template('account.html')
+    except expression as identifier:
+        pass 
 
 @app.route('/home',methods=['GET'])
 def do_something():
     try:
         return render_template('index.html')
-    except Exception as e:
-        return e
+    except expression as identifier:
+        pass
+
 
 @app.route('/videoedit')
 def do_something_next():
@@ -39,10 +47,18 @@ def do_text_summariser():
 def do_url_summariser():
     try:
         print("neha")
-        file_name = textsummariser.convert_url_to_text("https://medium.com/coinmonks/a-quick-introduction-to-distributed-systems-33868c85858e")
+        file_name = textsummariser.convert_url_to_text("https://towardsdatascience.com/understand-text-summarization-and-create-your-own-summarizer-in-python-b26a9f09fc70")
         print ( file_name )
-        return( json.dumps(textsummariser.generate_summary(file_name,8) ))
+        return( json.dumps(textsummariser.generate_summary(file_name,5) ))
     except:
+        pass
+
+@app.route('/handwritten')
+def do_handwritten_summariser():
+    try:
+        txt = handwritten.detect_document('IMG_20190601_195041.JPG')
+        
+    except expression as identifier:
         pass
 
 if __name__ == "main" : 
