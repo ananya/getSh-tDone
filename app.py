@@ -1,17 +1,24 @@
 from flask import Flask, request , render_template
-# from views import videoedit
-# from views import textsummariser
+from views import videoedit
+from views import textsummariser
 import json
 
 app = Flask(__name__)
 
 #routes
+@app.route('/',methods=['GET','POST'])
+def do_landing():
+    try:
+        return render_template('landing.html')
+    except Exception as e:
+        return e
+
 @app.route('/home',methods=['GET'])
 def do_something():
     try:
         return render_template('index.html')
-    except expression as identifier:
-        pass
+    except Exception as e:
+        return e
 
 @app.route('/videoedit')
 def do_something_next():
@@ -32,9 +39,9 @@ def do_text_summariser():
 def do_url_summariser():
     try:
         print("neha")
-        file_name = textsummariser.convert_url_to_text("https://towardsdatascience.com/understand-text-summarization-and-create-your-own-summarizer-in-python-b26a9f09fc70")
+        file_name = textsummariser.convert_url_to_text("https://medium.com/baseds/many-nodes-one-distributed-system-9921f85205c4")
         print ( file_name )
-        return( json.dumps(textsummariser.generate_summary(file_name,5) ))
+        return( json.dumps(textsummariser.generate_summary(file_name,8) ))
     except:
         pass
         
