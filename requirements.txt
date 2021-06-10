@@ -6,7 +6,7 @@ chardet==3.0.4
 Click==7.0
 cssselect==1.0.3
 decorator==4.4.0
-Django==2.2.1
+Django==2.2.24
 feedfinder2==0.0.4
 feedparser==5.2.1
 Flask==1.0.3
